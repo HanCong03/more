@@ -1,0 +1,118 @@
+.concat-page {
+  background: url("/assets/images/concat-bg.png") no-repeat 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+
+  .concat-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    overflow: hidden;
+
+    .concat-head {
+      height: 160px;
+      padding-top: 1px;
+      text-align: center;
+      color: #27425E;
+
+      h1 {
+        font-size: 3em;
+        margin: 50px 0 20px 0;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin: 20px;
+        font-weight: bold;
+      }
+
+      .key {
+        color: #5DC1CF;
+      }
+    }
+
+    .concat-body {
+      position: absolute;
+      top: 160px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        border-bottom: 1px solid #5DC1CF;
+      }
+
+      table {
+        table-layout: fixed;
+        border: none;
+        border-collapse:collapse;
+      }
+
+      td {
+        padding: 0;
+        padding-bottom: 25px;
+      }
+
+      td:first-child input {
+        margin-right: 5px;
+      }
+
+      input, textarea {
+        padding: 2px 5px;
+        line-height: 40px;
+        width: 300px;
+        font-size: 16px;
+        outline: none;
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid #DFDFDF;
+      }
+
+      textarea {
+        width: 617px;
+        height: 150px;
+      }
+
+      button {
+        color: #5DC1CF;
+        border: 1px solid #5DC1CF;
+        border-radius: 5px;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: normal;
+        background: transparent;
+      }
+
+      .info-box {
+        color: #27425E;
+        list-style: none;
+        padding: 0;
+        margin: 100px 0 0 0;
+      }
+    }
+  }
+
+  .concat-footer {
+    width: 1440px;
+    height: 70px;
+    line-height: 70px;
+    background: #5DC1CF;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+}

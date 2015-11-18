@@ -1,0 +1,69 @@
+@mixin scroll-animation {
+  transition: transform 0.5s ease-out;
+}
+
+html, body {
+  height: 100%;
+
+  max-width: 1440px;
+  min-width: 1000px;
+
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .welcome-box, .page-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    @include scroll-animation;
+  }
+
+  .inner-banner {
+    @include scroll-animation;
+  }
+
+  .welcome-box {
+    overflow: hidden;
+
+    &.invisible {
+      transform: translateY(-100%);
+    }
+  }
+
+  .page-box {
+    top: 100px;
+    transform: translateY(100%);
+
+    &.visible {
+      transform: translateY(0);
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+
+    font-size: 1em;
+    font-weight: bold;
+
+    color: #ffffff;
+    background: #5DC1CF;
+  }
+}

@@ -1,0 +1,69 @@
+.contact-page {
+  background: url("/assets/images/contact/bg.jpg") no-repeat 0 0;
+  background-size: 1350px 759px; }
+  .contact-page .contact-head {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    color: #27425E; }
+    .contact-page .contact-head h1 {
+      font-size: 2.7em;
+      padding: 100px 0 20px 0;
+      margin: 0; }
+    .contact-page .contact-head h2 {
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0; }
+  .contact-page .contact-body {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex; }
+    .contact-page .contact-body h1 {
+      color: #27425E;
+      margin: 0 0 30px 0;
+      padding: 0;
+      font-size: 2em;
+      border-bottom: 1px solid #5DC1CF; }
+    .contact-page .contact-body .contact-mail {
+      width: 650px;
+      height: 100%; }
+      .contact-page .contact-body .contact-mail tr, .contact-page .contact-body .contact-mail td {
+        padding: 0;
+        margin: 0;
+        font-size: 0; }
+      .contact-page .contact-body .contact-mail input {
+        width: 310px;
+        height: 50px;
+        margin-right: 10px;
+        padding: 2px 5px; }
+      .contact-page .contact-body .contact-mail textarea {
+        width: 630px;
+        height: 200px;
+        resize: none;
+        padding: 5px; }
+      .contact-page .contact-body .contact-mail input, .contact-page .contact-body .contact-mail textarea {
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin-bottom: 20px; }
+      .contact-page .contact-body .contact-mail button {
+        padding: 10px 30px;
+        background: transparent;
+        border: 1px solid #5DC1CF;
+        border-radius: 5px;
+        color: #5DC1CF;
+        font-size: 18px; }
+    .contact-page .contact-body .contact-info {
+      width: 350px;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 50px; }
+      .contact-page .contact-body .contact-info ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: #27425E;
+        font-size: 14px;
+        line-height: 2; }
