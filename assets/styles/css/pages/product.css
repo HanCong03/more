@@ -1,76 +1,88 @@
 .product-page {
   width: 100%;
   height: 600px; }
-  .product-page .product-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; }
-  .product-page .product-content {
+  .product-page .page-content {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2; }
-    .product-page .product-content .product-head {
-      width: 100%;
-      height: 250px;
-      text-align: center;
-      color: #27425E; }
-      .product-page .product-content .product-head h1 {
-        font-size: 2.7em;
-        padding: 100px 0 20px 0;
-        margin: 0; }
-      .product-page .product-content .product-head h2 {
-        font-size: 1.5em;
-        margin: 0;
-        padding: 0; }
-    .product-page .product-content .product-control {
+    .product-page .page-content .product-control {
       position: absolute;
-      top: 250px;
-      left: 0;
-      right: 0;
+      left: 50%;
       bottom: 0;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .product-page .product-content .product-control li {
+      width: 1080px;
+      height: 305px;
+      margin-left: -540px; }
+      .product-page .page-content .product-control .product-control-point-box {
         position: absolute;
         top: 0;
         left: 0;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        top: 295px;
-        left: 105px;
-        background: #ffffff;
-        transition: background-color linear 0.3s; }
-        .product-page .product-content .product-control li:HOVER {
-          background: #00A4A0; }
-          .product-page .product-content .product-control li:HOVER:after {
-            border-color: #00A4A0; }
-        .product-page .product-content .product-control li:after {
-          content: '';
-          position: absolute;
-          top: -5px;
-          left: -5px;
-          width: 30px;
-          height: 30px;
-          transition: border-color linear 0.3s;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .product-page .page-content .product-control .product-control-point-box .product-control-point {
+          width: 20px;
+          height: 20px;
           border-radius: 100%;
-          border: 2px solid #ffffff;
-          box-sizing: border-box; }
-        .product-page .product-content .product-control li p {
+          background: #ffffff;
           position: absolute;
-          top: -200px;
+          top: 0;
           left: 0;
-          background: #fff;
-          margin: 0;
-          padding: 0;
-          width: 400px;
-          max-width: 500px;
-          height: 150px;
-          display: none; }
+          transition: all ease 0.2s; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.auto {
+            top: 183px;
+            left: 85px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.fitness {
+            top: 133px;
+            left: 275px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.sports {
+            top: 259px;
+            left: 443px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.outdoor {
+            top: 164px;
+            left: 507px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.promotional {
+            top: 89px;
+            left: 725px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.bags {
+            top: 250px;
+            left: 787px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point.oem {
+            top: 108px;
+            left: 926px; }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point:HOVER {
+            background: rgba(255, 255, 255, 0.7); }
+            .product-page .page-content .product-control .product-control-point-box .product-control-point:HOVER::after {
+              border-color: rgba(97, 105, 119, 0.7); }
+          .product-page .page-content .product-control .product-control-point-box .product-control-point::after {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            transition: all ease 0.2s;
+            content: '';
+            display: block;
+            border-radius: 100%;
+            border: 3px solid rgba(97, 105, 119, 0);
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box; }
+      .product-page .page-content .product-control .product-hotspot-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-inex: 1; }
+  .product-page .product-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    width: 2560px;
+    height: 100%;
+    margin-left: -1280px; }

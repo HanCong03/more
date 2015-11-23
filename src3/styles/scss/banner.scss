@@ -65,6 +65,7 @@
         text-align: center;
 
         a {
+          transition: all linear .2s;
           cursor: pointer;
 
           &:HOVER {

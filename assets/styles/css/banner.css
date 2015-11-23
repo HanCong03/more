@@ -44,6 +44,7 @@
         font-weight: bold;
         text-align: center; }
         .banner .inner-banner .nav li a {
+          transition: all linear 0.2s;
           cursor: pointer; }
           .banner .inner-banner .nav li a:HOVER {
             color: #5DC1CF; }

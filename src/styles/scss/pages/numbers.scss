@@ -1,72 +1,37 @@
-.numbers-page {
-  background: #ddf0f3;
-
-  .numbers-head {
+.number-page {
+  .number-content {
     width: 100%;
-    height: 250px;
-    text-align: center;
-    color: #27425E;
-
-    h1 {
-      font-size: 2.7em;
-      padding: 100px 0 20px 0;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  .numbers-list {
-    position: relative;
-    top: 0;
-    left: 0;
-
-    height: 200px;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    height: 230px;
 
     display: flex;
 
-    > li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    >li {
       flex: 1;
 
       &.odd-number-item {
-        background: #c9f5f9;
+        background: #ddf0f3;
       }
 
       &.even-number-item {
-        background: #8299a8;
+        background: #8199a7;
       }
 
-      .number {
+      >label {
+        display: block;
+        width: 100%;
+        height: 100px;
         margin-top: 50px;
-        display: block;
-        height: 80px;
-
-        font-size: 2em;
-        font-weight: bold;
-
-        line-height: 80px;
+        background: rgba(255, 255, 255, .7);
+        color: #27425E;
         text-align: center;
-
-        background: rgba(250, 250, 250, 0.8);
-      }
-
-      .number-label {
-        display: block;
-        height: 70px;
-
-        font-size: 1em;
+        font-size: 36px;
         font-weight: bold;
-
-        line-height: 70px;
-        text-align: center;
+        line-height: 100px;
       }
     }
   }

@@ -1,116 +1,112 @@
 .service-page {
-  .service-head {
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    background: #fcfcfc;
-    color: #27425E;
+  .service-content {
+    position: relative;
+    top: 0;
+    left: 0;
 
-    h1 {
-      font-size: 2.7em;
-      padding: 50px 0 20px 0;
-      margin: 0;
+    width: 100%;
+    height: 500px;
+
+    .service-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: 1;
+
+      width: 2560px;
+      height: 500px;
     }
 
-    h2 {
-      font-size: 1.5em;
-      margin: 0;
-      padding: 0;
-    }
-  }
+    .service-list {
+      position: absolute;
+      top: 0;
+      left: 50%;
 
-  .service-body {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    background: url('/assets/images/service/bg.jpg') no-repeat 0 0;
-    background-size: 1350px 600px;
+      z-index: 2;
 
-    line-height: 3;
-
-    .service-content {
-      width: 100%;
-      height: 100%;
-
-      margin: 0;
-      padding: 0;
+      list-style: none;
 
       display: flex;
-      list-style: none;
-      justify-content: space-around;
+      margin: 0;
+      margin-left: -540px;
+      padding: 0;
+
+      width: 1080px;
+      height: 100%;
 
       li {
         flex: 1;
-        width: 200px;
-        height: 100%;
-        border-right: 1px dashed #ffffff;
-
-        cursor: default;
 
         position: relative;
         top: 0;
         left: 0;
 
-        &:HOVER  {
-          .hover-box {
-            opacity: 1;
-          }
-        }
+        border-right: 1px dashed #ffffff;
 
         &:last-child {
           border-right: none;
         }
 
-        .normal-box, .hover-box {
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-
-          box-sizing: border-box;
-          padding: 50px 30px;
+        &:HOVER {
+          .hover-box {
+            opacity: 1;
+          }
         }
 
         .normal-box {
-          z-index: 1;
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
           .icon-box {
-            width: 180px;
-            height: 160px;
-            margin: 0 auto;
-            
+            height: 120px;
+
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            justify-content: space-around;
 
-            border-bottom: 2px solid #00989C;
+            .icon-inner-box {
+              display: flex;
+              height: 80px;
 
-            label {
-              font-weight: bold;
+              justify-items: center;
+              align-items: center;
             }
           }
 
           p {
-            padding: 0;
-            padding-top: 50px;
-            margin: 0;
-
-            //line-height: 3;
+            padding: 40px 35px;
+            line-height: 2;
+            font-size: 16px;
           }
         }
 
         .hover-box {
-          z-index: 2;
+          width: 100%;
+          height: 100%;
 
-          transition: opacity ease-in .2s;
+          cursor: default;
+
+          line-height: 2;
+
+          box-sizing: border-box;
+
+          padding: 80px 30px;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          transition: opacity ease-in .3s;
+
+          background: url('/assets/images/service/item-bg.jpg') no-repeat 0 0;
+          background-size: 216px 500px;
 
           opacity: 0;
-          color: #ffffff;
-
-          background: url('/assets/images/service/hover-bg.jpg') no-repeat 0 0;
-          background-size: 350px 600px;
         }
       }
     }

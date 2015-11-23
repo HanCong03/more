@@ -1,0 +1,40 @@
+$sideWidth: 25px;
+
+.page-box {
+  .page-container {
+    position: absolute;
+    top: 0;
+    left: $sideWidth;
+    bottom: 0;
+    right: $sideWidth;
+
+    box-sizing: border-box;
+
+    background: rgba(240, 240, 240, .5);
+
+    overflow: hidden;
+    overflow-y: auto;
+
+    .page {
+      width: 100%;
+
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .left-side, .right-side {
+    width: $sideWidth;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .right-side {
+    left: auto;
+    right: 0;
+  }
+}

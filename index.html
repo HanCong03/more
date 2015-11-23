@@ -5,13 +5,14 @@
     <title></title>
 
     <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css">
-
     <link rel="stylesheet" href="/assets/styles/css/layout.css">
+    <link rel="stylesheet" href="/assets/styles/css/page-box.css">
     <link rel="stylesheet" href="/assets/styles/css/scrollbar.css">
-    <link rel="stylesheet" href="/assets/styles/css/banner.css">
-    <link rel="stylesheet" href="/assets/styles/css/page.css">
+    <!--<link rel="stylesheet" href="/assets/styles/css/banner.css">-->
+    <!--<link rel="stylesheet" href="/assets/styles/css/page.css">-->
 
-    <link rel="stylesheet" href="/assets/styles/css/pages/welcome.css">
+    <!--<link rel="stylesheet" href="/assets/styles/css/pages/welcome.css">-->
+    <link rel="stylesheet" href="/assets/styles/css/pages.css">
     <link rel="stylesheet" href="/assets/styles/css/pages/home.css">
     <link rel="stylesheet" href="/assets/styles/css/pages/about.css">
     <link rel="stylesheet" href="/assets/styles/css/pages/service.css">
@@ -25,17 +26,19 @@
     <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
     <script src="/bower_components/textillate/jquery.textillate.js"></script>
 
-    <script src="src/scripts/router.js"></script>
-    <script src="src/scripts/linker.js"></script>
-    <script src="src/scripts/switch.js"></script>
-    <script src="src/scripts/page-size.js"></script>
-    <script src="src/scripts/page-position.js"></script>
-    <script src="src/scripts/scroll.js"></script>
+    <!--<script src="src/scripts/router.js"></script>-->
+    <!--<script src="src/scripts/linker.js"></script>-->
+    <!--<script src="src/scripts/switch.js"></script>-->
+    <!--<script src="src/scripts/page-size.js"></script>-->
+    <!--<script src="src/scripts/page-position.js"></script>-->
+    <!--<script src="src/scripts/scroll.js"></script>-->
 
     <script src="src/scripts/home.js"></script>
-    <script src="src/scripts/about.js"></script>
+    <!--<script src="src/scripts/about.js"></script>-->
     <script src="src/scripts/skills.js"></script>
-    <script src="src/scripts/product.js"></script>
+    <!--<script src="src/scripts/product.js"></script>-->
+    <script src="src/scripts/number.js"></script>
+    <script src="src/scripts/contact.js"></script>
 
     <!--<script src="src/scripts/router.js"></script>-->
 
@@ -64,206 +67,184 @@
 
         <div class="welcome-box">
             <div class="welcome-content">
-                <a to="home" class="entry-btn">
-                    <img src="/assets/images/welcome/small-logo.svg" width="51">
+                <!--<a to="home" class="entry-btn">-->
+                    <!--<img src="/assets/images/welcome/small-logo.svg" width="51">-->
 
-                    <p>
-                        Take a scroll to learn more about us
-                    </p>
-                </a>
+                    <!--<p>-->
+                        <!--Take a scroll to learn more about us-->
+                    <!--</p>-->
+                <!--</a>-->
+                welcome
             </div>
-            <img src="/assets/images/welcome/bg.jpg" height="900">
         </div>
+
         <div class="page-box">
-            <div class="page-content">
-                <div class="page-wrap">
-                    <div class="page home-page navigable">
-                        <div class="home-content">
+            <div class="page-container">
+                <div class="page home-page">
+                    <div class="home-content">
+                        <div class="tlt"><h2 id="tltText">We are products supplier</h2></div>
 
-                            <div class="tlt"><h2 id="tltText">We are products supplier</h2></div>
+                        <h1><span class="key">One-Stop</span> Service Supplier</h1>
 
-                            <h1><span class="key">One-Stop</span> Service Supplier</h1>
+                        <p>
+                            After years fast growing,we had become a comprehensive service supplier from the product seller,with
+                            hundreds of projects experience,we become to know your market and your products.We know ho "how to
+                            do and what to do" our special "easy business solutions system" will help you easily to track the
+                            status of your orders,and tell you what we had done together.Before long,you will see,we may not
+                            your "Mr.Best" But we are your "Mr.Right"
+                        </p>
 
-                            <p>
-                                After years fast growing,we had become a comprehensive service supplier from the product seller,with
-                                hundreds of projects experience,we become to know your market and your products.We know ho "how to
-                                do and what to do" our special "easy business solutions system" will help you easily to track the
-                                status of your orders,and tell you what we had done together.Before long,you will see,we may not
-                                your "Mr.Best" But we are your "Mr.Right"
-                            </p>
+                        <div>
+                            <button>ABOUT US</button>
+                            <button>EASY BUSINESS</button>
+                        </div>
+                    </div>
+                    <img id="homeBg" class="home-bg" src="/assets/images/home/bg.jpg">
+                </div>
 
-                            <div>
-                                <button>ABOUT US</button>
-                                <button>EASY BUSINESS</button>
-                            </div>
+                <div class="page about-page">
+                    <img src="/assets/images/about/bg.jpg" class="about-head-bg">
+
+                    <div class="about-head">
+                        <div class="page-title">
+                            <h1>ABOUT US</h1>
+                            <h2><span class="key">To experience</span> the one-stop service</h2>
                         </div>
 
-                        <img src="assets/images/home-bg.jpg" class="home-bg">
+                        <ul class="about-list">
+                            <li class="about-list-first">
+                                <p>Nigbo More Kasi Trading Co.Ltd.which is located in NingBo where is famous for its
+                                    picturesque scenes and outstanding people.</p>
+                            </li>
+                            <li class="about-list-second">
+                                <p>We are specialized in suppying the automobile and motorcycle accessories,bags,outdoor
+                                    products,fitness items,sports goods and kinds of promotional products.</p>
+                            </li>
+                            <li class="about-list-third">
+                                <p>With reliable quality ad good reputation,now we have occupied a certain stable and mature
+                                    market in the Middle Ease,Europe,North and South America and so on.We mainly insist on
+                                    dedicating to provide professional one-stop service for our small and medium-sized
+                                    foreign customers.</p>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="page about-page navigable">
-                        <div class="about-head">
-                            <div class="about-content">
-                                <div class="about-title">
-                                    <h1>ABOUT US</h1>
+                    <div class="comment">
+                        <img src="/assets/images/about/comment.jpg" class="comment-bg">
+                    </div>
+                </div>
 
-                                    <h2><span class="key">To experience</span> the one-stop service</h2>
+                <div class="page service-page">
+                    <div class="page-title">
+                        <h1>SERVICE</h1>
+                        <h2><span class="key">Do more</span> than you thought</h2>
+                    </div>
+                    <div class="service-content">
+                        <ul class="service-list">
+                            <li>
+                                <div class="normal-box">
+                                    <div class="icon-box">
+                                        <div class="icon-inner-box">
+                                            <img src="/assets/images/service/development-icon.png" width="55">
+                                        </div>
+                                        <label>Development</label>
+                                    </div>
+                                    <p>
+                                        To help you develop the new project,it could be a valuable idea,a design,a revisedsample
+                                        etc...
+                                    </p>
+                                </div>
+                                <div class="hover-box">
+                                    A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="normal-box">
+                                    <div class="icon-box">
+                                        <div class="icon-inner-box">
+                                            <img src="/assets/images/service/inspection-icon.png" width="58">
+                                        </div>
+                                        <label>Inspection</label>
+                                    </div>
+                                    <p>
+                                        To avoid any risks or loss before or during the orders. You need the eyes or a report to
+                                        know the suppliers...
+                                    </p>
+                                </div>
+                                <div class="hover-box">
+                                    A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="normal-box">
+                                    <div class="icon-box">
+                                        <div class="icon-inner-box">
+                                            <img src="/assets/images/service/shipment-icon.png" width="69">
+                                        </div>
+                                        <label>Shipment</label>
+                                    </div>
+                                    <p>
+                                        To assemble different bulk cargos from different manufacturers to one shipment,or arrange
+                                        container ...
+                                    </p>
+                                </div>
+                                <div class="hover-box">
+                                    A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="normal-box">
+                                    <div class="icon-box">
+                                        <div class="icon-inner-box">
+                                            <img src="/assets/images/service/design-icon.png" width="48">
+                                        </div>
+                                        <label>Design</label>
+                                    </div>
+                                    <p>
+                                        To help you develop the new project,To use a creative idea and an attractive design on your
+                                        packages will be ...
+                                    </p>
                                 </div>
 
-                                <ul class="about-list">
-                                    <li class="about-list-first">
-                                        <p>Nigbo More Kasi Trading Co.Ltd.which is located in NingBo where is famous for its
-                                            picturesque scenes and outstanding people.</p>
-                                    </li>
-                                    <li class="about-list-second">
-                                        <p>We are specialized in suppying the automobile and motorcycle accessories,bags,outdoor
-                                            products,fitness items,sports goods and kinds of promotional products.</p>
-                                    </li>
-                                    <li class="about-list-third">
-                                        <p>With reliable quality ad good reputation,now we have occupied a certain stable and mature
-                                            market in the Middle Ease,Europe,North and South America and so on.We mainly insist on
-                                            dedicating to provide professional one-stop service for our small and medium-sized
-                                            foreign customers.</p>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="hover-box">
+                                    A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
+                                </div>
+                            </li>
 
-                            <img src="assets/images/about/bg.png" class="about-bg">
-                        </div>
+                            <li>
+                                <div class="normal-box">
+                                    <div class="icon-box">
+                                        <div class="icon-inner-box">
+                                            <img src="/assets/images/service/buying-icon.png" width="55">
+                                        </div>
+                                        <label>Buying office</label>
+                                    </div>
+                                    <p>
+                                        To avoid any risks or loss before or during To experience our one stop service,choose us as
+                                        your buying office ...
+                                    </p>
+                                </div>
 
-                        <div class="about-comment">
-                            <div class="comment-slider">
-                                <button data-type="prev" class="scroll-button"></button>
-                                <ul class="comment-list comment-animation">
-                                    <li>
-                                        <img src="/assets/images/head.jpg" class="head">
-                                        <p class="comment-text">
-                                                To help you develop the new project,it could be a valuable idea,a
-                                            design,a revised sample etc.To help you develop the new project,it could be a valuable idea,a
-                                            design,a revised sample etc.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <img src="/assets/images/head.jpg" class="head">
-                                        <p class="comment-text">
-                                            My father was a self-taught mandolin player. He was one of the best string instrument players in our town. He could not read music, but if he heard a tune a few times, he could play it. When he was younger, he was a member of a small country music band. They would play at local dances and on a few occasions would play for the local radio station. He often told us how he had auditioned and earned a position in a band that featured Patsy Cline as their lead singer. He told the family that after he was hired he never went back. Dad was a very religious man. He stated that there was a lot of drinking and cursing the day of his audition and he did not want to be around that type of environment.
-                                        </p>
-                                    </li>
-                                </ul>
-                                <button data-type="next" class="scroll-button"></button>
-                            </div>
-                        </div>
+                                <div class="hover-box">
+                                    A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
+                                </div>
+                            </li>
+                        </ul>
+
+                        <img src="/assets/images/service/bg.jpg" class="service-bg">
+                    </div>
+                </div>
+
+                <div class="page work-page">
+                    <div class="page-title">
+                        <h1>HOW WE WORK</h1>
+                        <h2><span class="key">Do more</span> than you thought</h2>
                     </div>
 
-                    <div class="page service-page navigable">
-                        <div class="service-head">
-                            <h1>SERVICE</h1>
-
-                            <h2><span class="key">Do more</span> than you thought</h2>
-                        </div>
-                        <div class="service-body">
-                            <ul class="service-content">
-                                <li class="development">
-                                    <div class="normal-box">
-                                        <div class="icon-box">
-                                            <div class="icon-inner-box">
-                                                <img src="/assets/images/development-icon.png" width="55">
-                                            </div>
-                                            <label>Development</label>
-                                        </div>
-                                        <p>
-                                            To help you develop the new project,it could be a valuable idea,a design,a revisedsample
-                                            etc...
-                                        </p>
-                                    </div>
-                                    <div class="hover-box">
-                                        A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="normal-box">
-                                        <div class="icon-box">
-                                            <div class="icon-inner-box">
-                                                <img src="/assets/images/inspection-icon.png" width="58">
-                                            </div>
-                                            <label>Inspection</label>
-                                        </div>
-                                        <p>
-                                            To avoid any risks or loss before or during the orders. You need the eyes or a report to
-                                            know the suppliers...
-                                        </p>
-                                    </div>
-                                    <div class="hover-box">
-                                        A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="normal-box">
-                                        <div class="icon-box">
-                                            <div class="icon-inner-box">
-                                                <img src="/assets/images/shipment-icon.png" width="58">
-                                            </div>
-                                            <label>Shipment</label>
-                                        </div>
-                                        <p>
-                                            To assemble different bulk cargos from different manufacturers to one shipment,or arrange
-                                            container ...
-                                        </p>
-                                    </div>
-                                    <div class="hover-box">
-                                        A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="normal-box">
-                                        <div class="icon-box">
-                                            <div class="icon-inner-box">
-                                                <img src="/assets/images/design-icon.png" width="58">
-                                            </div>
-                                            <label>Design</label>
-                                        </div>
-                                        <p>
-                                            To help you develop the new project,To use a creative idea and an attractive design on your
-                                            packages will be ...
-                                        </p>
-                                    </div>
-
-                                    <div class="hover-box">
-                                        A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="normal-box">
-                                        <div class="icon-box">
-                                            <div class="icon-inner-box">
-                                                <img src="/assets/images/buying-icon.png" width="58">
-                                            </div>
-                                            <label>Buying office</label>
-                                        </div>
-                                        <p>
-                                            To avoid any risks or loss before or during To experience our one stop service,choose us as
-                                            your buying office ...
-                                        </p>
-                                    </div>
-
-                                    <div class="hover-box">
-                                        A friend of mine named Paul received an automobile from his brother as Christmas present. On Christmas eve, when Paul came out of his office, a street urchin was looking around the shining new car, admiring it.
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="page work-page">
-                        <div class="work-head">
-                            <h1>HOW WE WORK</h1>
-                            <h2><span class="key">Do more</span> than you thought</h2>
-                        </div>
-
+                    <div class="work-content">
                         <div class="work-body">
                             <div class="work-box work-box-lt">
                                 <h1>GET DEMANDS</h1>
@@ -283,174 +264,164 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="page skill-page">
-                        <div class="skill-head">
-                            <h1>OUT SKILLS</h1>
-                            <h2><span class="key">Do more</span> than you thought</h2>
-                            <h3>we are not a almighty company and have different levels of skill proficiency for our service</h3>
-                        </div>
-
-                        <div class="skill-body">
-                            <ul class="skill-list">
-                                <li>
-                                    <div class="skill-wrap">
-                                        <div class="skill-box-wrap">
-                                            <div class="skill-box odd-skill-box"></div>
-                                            <div class="skill-bg-box"></div>
-                                        </div>
-                                        <label class="skill-label"></label>
-                                    </div>
-                                    <label>Development</label>
-                                </li>
-                                <li>
-                                    <div class="skill-wrap">
-                                        <div class="skill-box-wrap">
-                                            <div class="skill-box even-skill-box"></div>
-                                            <div class="skill-bg-box"></div>
-                                        </div>
-                                        <label class="skill-label"></label>
-                                    </div>
-                                    <label>Inspection</label>
-                                </li>
-                                <li>
-                                    <div class="skill-wrap">
-                                        <div class="skill-box-wrap">
-                                            <div class="skill-box odd-skill-box"></div>
-                                            <div class="skill-bg-box"></div>
-                                        </div>
-                                        <label class="skill-label"></label>
-                                    </div>
-                                    <label>Quality Control</label>
-                                </li>
-                                <li>
-                                    <div class="skill-wrap">
-                                        <div class="skill-box-wrap">
-                                            <div class="skill-box even-skill-box"></div>
-                                            <div class="skill-bg-box"></div>
-                                        </div>
-                                        <label class="skill-label"></label>
-                                    </div>
-                                    <label>Shipment</label>
-                                </li>
-                                <li>
-                                    <div class="skill-wrap">
-                                        <div class="skill-box-wrap">
-                                            <div class="skill-box odd-skill-box"></div>
-                                            <div class="skill-bg-box"></div>
-                                        </div>
-                                        <label class="skill-label"></label>
-                                    </div>
-                                    <label>Design</label>
-                                </li>
-                                <li>
-                                    <div class="skill-wrap">
-                                        <div class="skill-box-wrap">
-                                            <div class="skill-box even-skill-box"></div>
-                                            <div class="skill-bg-box"></div>
-                                        </div>
-                                        <label class="skill-label"></label>
-                                    </div>
-                                    <label>Buying Office</label>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="page skill-page">
+                    <div class="page-title">
+                        <h1>OUT SKILLS</h1>
+                        <h2><span class="key">Do more</span> than you thought</h2>
+                        <em>we are not a almighty company and have different levels of skill proficiency for our service</em>
                     </div>
 
-                    <div class="page product-page navigable">
-                        <div class="product-content">
-                            <div class="product-head">
-                                <h1>PRODUCTS</h1>
-                                <h2><span class="key">Have more</span> than you expected</h2>
-                            </div>
-
-                            <ul class="product-control">
-                                <li class="accessories-hotspot">
-                                    <p>
-                                        Six minutes to six, said the clock over the information booth in New York’s Grand Central Station. The tall young Army lieutenant lifted his sunburned face and narrowed his eyes to note the exact time. His heart was pounding with a beat.
-                                    </p>
-                                </li>
-                                <li class="fitness-hotspot"></li>
-                                <li class="outdoor-hotspot"></li>
-                                <li class="sports-hotspot"></li>
-                                <li class="promotional-hotspot"></li>
-                                <li class="bags-hotspot"></li>
-                                <li class="oem-hotspot"></li>
-                            </ul>
-                        </div>
-                        <img src="/assets/images/product/bg.jpg" class="product-bg">
-                    </div>
-
-                    <div class="page numbers-page">
-                        <div class="numbers-head">
-                            <h1>OUR NUMBERS</h1>
-                            <h2><span class="key">Other cool</span> fact about us</h2>
-                        </div>
-
-                        <ul class="numbers-list">
-                            <li class="odd-number-item">
-                                <span class="number">6+</span>
-                                <label class="number-label">COUNTRIES</label>
+                    <div class="skill-body">
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-wrap">
+                                    <div class="skill-box-wrap">
+                                        <div class="skill-box odd-skill-box"></div>
+                                        <div class="skill-bg-box"></div>
+                                    </div>
+                                    <label class="skill-label"></label>
+                                </div>
+                                <label>Development</label>
                             </li>
-
-                            <li class="even-number-item">
-                                <span class="number">5+</span>
-                                <label class="number-label">YEARS</label>
+                            <li>
+                                <div class="skill-wrap">
+                                    <div class="skill-box-wrap">
+                                        <div class="skill-box even-skill-box"></div>
+                                        <div class="skill-bg-box"></div>
+                                    </div>
+                                    <label class="skill-label"></label>
+                                </div>
+                                <label>Inspection</label>
                             </li>
-
-                            <li class="odd-number-item">
-                                <span class="number">20+</span>
-                                <label class="number-label">CLIENTS</label>
+                            <li>
+                                <div class="skill-wrap">
+                                    <div class="skill-box-wrap">
+                                        <div class="skill-box odd-skill-box"></div>
+                                        <div class="skill-bg-box"></div>
+                                    </div>
+                                    <label class="skill-label"></label>
+                                </div>
+                                <label>Quality Control</label>
                             </li>
-
-                            <li class="even-number-item">
-                                <span class="number">500+</span>
-                                <label class="number-label">PROJECTS</label>
+                            <li>
+                                <div class="skill-wrap">
+                                    <div class="skill-box-wrap">
+                                        <div class="skill-box even-skill-box"></div>
+                                        <div class="skill-bg-box"></div>
+                                    </div>
+                                    <label class="skill-label"></label>
+                                </div>
+                                <label>Shipment</label>
                             </li>
-
-                            <li class="odd-number-item">
-                                <span class="number">300+</span>
-                                <label class="number-label">FACTORIES</label>
+                            <li>
+                                <div class="skill-wrap">
+                                    <div class="skill-box-wrap">
+                                        <div class="skill-box odd-skill-box"></div>
+                                        <div class="skill-bg-box"></div>
+                                    </div>
+                                    <label class="skill-label"></label>
+                                </div>
+                                <label>Design</label>
+                            </li>
+                            <li>
+                                <div class="skill-wrap">
+                                    <div class="skill-box-wrap">
+                                        <div class="skill-box even-skill-box"></div>
+                                        <div class="skill-bg-box"></div>
+                                    </div>
+                                    <label class="skill-label"></label>
+                                </div>
+                                <label>Buying Office</label>
                             </li>
                         </ul>
                     </div>
+                </div>
 
-                    <div class="page brands-page navigable" style="height: 500px; background: red;">
+                <div class="page product-page">
+                    <div class="page-content">
+                        <div class="page-title">
+                            <h1>PRODUCTS</h1>
+                            <h2><span class="key">Have more</span> than you expected</h2>
+                        </div>
+                        <div class="product-control">
+                            <ul class="product-control-point-box">
+                                <li class="auto product-control-point"></li>
+                                <li class="fitness product-control-point"></li>
+                                <li class="sports product-control-point"></li>
+                                <li class="outdoor product-control-point"></li>
+                                <li class="promotional product-control-point"></li>
+                                <li class="bags product-control-point"></li>
+                                <li class="oem product-control-point"></li>
+                            </ul>
+                            <img src="/assets/images/product/hotspot-map.png" class="product-hotspot-bg">
+                        </div>
+                    </div>
+                    <img class="product-bg" src="/assets/images/product/bg.jpg">
+                </div>
+
+                <div class="page number-page">
+                    <div class="page-title">
+                        <h1>OUR NUMBERS</h1>
+                        <h2><span class="key">Other cool</span> fact about us</h2>
                     </div>
 
-                    <div class="page contact-page navigable">
-                        <div class="contact-head">
-                            <h1>CONTACT</h1>
-                            <h2><span class="key">get in</span> touch</h2>
-                        </div>
+                    <ul class="number-content">
+                        <li class="odd-number-item">
+                            <label class="number-label"></label>
+                        </li>
+                        <li class="even-number-item">
+                            <label class="number-label"></label>
+                        </li>
+                        <li class="odd-number-item">
+                            <label class="number-label"></label>
+                        </li>
+                        <li class="even-number-item">
+                            <label class="number-label"></label>
+                        </li>
+                        <li class="odd-number-item">
+                            <label class="number-label"></label>
+                        </li>
+                    </ul>
+                </div>
 
-                        <div class="contact-body">
-                            <div class="contact-mail">
+                <div class="page contact-page">
+                    <div class="page-title">
+                        <h1>CONTACT</h1>
+                        <h2><span class="key">get in</span> touch</h2>
+                    </div>
+
+                    <div class="contact-body">
+                        <div class="contact-mail contact-animation">
+                            <div class="contact-content-box">
                                 <h1>MAIL</h1>
                                 <form>
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td>
-                                                    <input type="text" name="name" placeholder="Name">
-                                                    <input type="text" name="mail" placeholder="Mail">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <textarea name="message" placeholder="Message"></textarea>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <button type="submit">Submit mail</button>
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="name" placeholder="Name">
+                                                <input type="text" name="mail" placeholder="Mail">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <textarea name="message" placeholder="Message"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button type="submit">Submit mail</button>
+                                            </td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </form>
                             </div>
-                            <div class="contact-info">
+                        </div>
+                        <div class="contact-info contact-animation">
+                            <div class="contact-content-box">
                                 <h1>MORE INFO</h1>
                                 <img class="qr-code">
                                 <ul>
@@ -463,14 +434,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="copyright">
-                        © Copyright 2015 morekasi.com
-                    </div>
-
                 </div>
             </div>
-
             <div class="left-side"></div>
             <div class="right-side"></div>
         </div>

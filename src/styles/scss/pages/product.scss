@@ -2,17 +2,7 @@
   width: 100%;
   height: 600px;
 
-  .product-bg {
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  .product-content {
+  .page-content {
     width: 100%;
     height: 100%;
 
@@ -21,93 +11,120 @@
     left: 0;
     z-index: 2;
 
-    .product-head {
-      width: 100%;
-      height: 250px;
-      text-align: center;
-      color: #27425E;
-
-      h1 {
-        font-size: 2.7em;
-        padding: 100px 0 20px 0;
-        margin: 0;
-      }
-
-      h2 {
-        font-size: 1.5em;
-        margin: 0;
-        padding: 0;
-      }
-    }
-
     .product-control {
       position: absolute;
-      top: 250px;
-      left: 0;
-      right: 0;
+      left: 50%;
       bottom: 0;
+      width: 1080px;
+      height: 305px;
+      margin-left: -540px;
 
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
+      .product-control-point-box {
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
 
-        width: 20px;
-        height: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-        border-radius: 100%;
+        .product-control-point {
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background: #ffffff;
+          position: absolute;
+          top: 0;
+          left: 0;
 
-        top: 295px;
-        left: 105px;
+          transition: all ease .2s;
 
-        background: #ffffff;
+          &.auto {
+            top: 183px;
+            left: 85px;
+          }
 
-        transition: background-color linear .3s;
+          &.fitness {
+            top: 133px;
+            left: 275px;
+          }
 
-        &:HOVER {
-          background: #00A4A0;
+          &.sports {
+            top: 259px;
+            left: 443px;
+          }
 
-          &:after {
-            border-color: #00A4A0;
+          &.outdoor {
+            top: 164px;
+            left: 507px;
+          }
+
+          &.promotional {
+            top: 89px;
+            left: 725px;
+          }
+
+          &.bags {
+            top: 250px;
+            left: 787px;
+          }
+
+          &.oem {
+            top: 108px;
+            left: 926px;
+          }
+
+          &:HOVER {
+            background: rgba(255, 255, 255, .7);
+
+            &::after {
+              border-color: rgba(97, 105, 119, .7);
+            }
+          }
+
+          &::after {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+
+            transition: all ease .2s;
+
+            content: '';
+            display: block;
+
+            border-radius: 100%;
+            border: 3px solid rgba(97, 105, 119, 0);
+
+            width: 30px;
+            height: 30px;
+
+            box-sizing: border-box;
           }
         }
+      }
 
-        &:after {
-          content: '';
-          position: absolute;
-          top: -5px;
-          left: -5px;
-
-          width: 30px;
-          height: 30px;
-
-          transition: border-color linear .3s;
-
-          border-radius: 100%;
-          border: 2px solid #ffffff;
-          box-sizing: border-box;
-        }
-
-        p {
-          position: absolute;
-          top: -200px;
-          left: 0;
-          background: #fff;
-
-          margin: 0;
-          padding: 0;
-
-          width: 400px;
-          max-width: 500px;
-          height: 150px;
-          display: none;
-        }
+      .product-hotspot-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-inex: 1;
       }
     }
+  }
 
+  .product-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+
+    width: 2560px;
+    height: 100%;
+    margin-left: -1280px;
   }
 }

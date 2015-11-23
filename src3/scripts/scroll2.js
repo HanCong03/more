@@ -48,7 +48,6 @@ jQuery(function ($) {
 
     function checkPage() {
         var scrollTop = $pageContainer[0].scrollTop;
-        var limit = boxHeight * 2 / 3;
         var current;
 
         var invisible = [];
@@ -67,7 +66,7 @@ jQuery(function ($) {
             } else {
                 height = Math.min(pageBottom, current.bottom) - Math.max(pageTop, current.top);
 
-                if (height >= limit) {
+                if (height >= boxHeight / 2 || height >= (current.height * 2 / 3)) {
                     visible.push(i);
                 }
             }
@@ -121,7 +120,6 @@ jQuery(function ($) {
 
         var activeIndex = findActiveIndex(newVisible);
 
-        console.log(activeIndex)
         $doc.trigger('navactive', activeIndex);
     }
 
@@ -154,8 +152,8 @@ jQuery(function ($) {
         }
     }
 
-    function findActiveIndex(newVisible) {
-        var keys = Object.keys(newVisible);
+    function findActiveIndex(visiblePages) {
+        var keys = Object.keys(visiblePages);
         var rect;
         var index;
 
@@ -165,14 +163,17 @@ jQuery(function ($) {
             rect = $pages[index].getBoundingClientRect();
 
             if (rect.top > BANNER_HEIGHT) {
+                console.log(pagePosition[index].navIndex, index, visiblePages)
                 return pagePosition[index].navIndex;
             }
 
             if (BANNER_HEIGHT - rect.top < rect.height / 2) {
+                console.log(pagePosition[index].navIndex, index, visiblePages)
                 return pagePosition[index].navIndex;
             }
         }
 
+        console.log('bad', visiblePages)
         return pagePosition[len - 1].navIndex;
     }
 });

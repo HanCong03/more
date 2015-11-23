@@ -1,0 +1,26 @@
+.page-box .page-container {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  bottom: 0;
+  right: 25px;
+  box-sizing: border-box;
+  background: rgba(240, 240, 240, 0.5);
+  overflow: hidden;
+  overflow-y: auto; }
+  .page-box .page-container .page {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0; }
+
+.page-box .left-side, .page-box .right-side {
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.page-box .right-side {
+  left: auto;
+  right: 0; }
