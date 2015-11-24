@@ -14,7 +14,7 @@ jQuery(function ($) {
 
     var id;
 
-    //start();
+    start();
 
     window.start = start;
 

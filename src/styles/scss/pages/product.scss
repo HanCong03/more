@@ -83,6 +83,10 @@
             &::after {
               border-color: rgba(97, 105, 119, .7);
             }
+
+            &::before {
+              border-color: rgba(255, 255, 255, 0);
+            }
           }
 
           &::after {
@@ -103,6 +107,25 @@
 
             box-sizing: border-box;
           }
+
+          &::before {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+
+            transition: all ease .2s;
+
+            content: '';
+            display: block;
+
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+
+            width: 26px;
+            height: 26px;
+
+            box-sizing: border-box;
+          }
         }
       }
 
@@ -112,7 +135,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-inex: 1;
+        z-index: 1;
       }
     }
   }

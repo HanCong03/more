@@ -1,63 +1,110 @@
-.contact-page .contact-body {
-  width: 100%;
-  height: 600px;
+.contact-page {
   position: relative;
   top: 0;
-  left: 0; }
-  .contact-page .contact-body.in .contact-mail {
-    margin-left: 0;
-    transform: translate3d(0, 0, 0); }
-  .contact-page .contact-body.in .contact-info {
-    margin-right: 0;
-    transform: translate3d(0, 0, 0); }
-  .contact-page .contact-body .contact-animation {
-    box-sizing: border-box;
-    padding: 0 25px;
-    transition: margin, transform linear 0.3s; }
-  .contact-page .contact-body h1 {
-    margin: 0;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 20px 0 10px 0;
-    border-bottom: 1px solid #5dc1cf; }
-  .contact-page .contact-body .contact-content-box {
-    max-width: 540px; }
-  .contact-page .contact-body .contact-mail {
+  left: 0;
+  width: 100%;
+  height: 800px; }
+  .contact-page .contact-page-bg {
+    width: 2560px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -400px;
+    margin-left: -1280px; }
+  .contact-page .contact-page-content {
+    width: 100%;
     position: absolute;
     top: 0;
-    left: 100px;
-    width: 50%;
-    height: 100%;
-    margin-left: -100px;
-    transform: translate3d(-100%, 0, 0); }
-    .contact-page .contact-body .contact-mail table {
-      table-layout: fixed;
-      border-collapse: collapse;
-      border: none; }
-      .contact-page .contact-body .contact-mail table tr, .contact-page .contact-body .contact-mail table td {
-        padding: 0;
-        margin: 0; }
-      .contact-page .contact-body .contact-mail table input {
-        width: 260px;
-        height: 40px;
-        box-sizing: border-box; }
-    .contact-page .contact-body .contact-mail .contact-content-box {
-      position: absolute;
+    left: 0;
+    z-index: 2; }
+    .contact-page .contact-page-content .contact-body {
+      width: 100%;
+      height: 550px;
+      position: relative;
       top: 0;
-      right: 0;
-      width: 100%; }
-  .contact-page .contact-body .contact-info {
-    position: absolute;
-    top: 0;
-    right: -100px;
-    width: 50%;
-    height: 100%;
-    margin-right: 100px;
-    transform: translate3d(100%, 0, 0); }
-    .contact-page .contact-body .contact-info ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      color: #27425E;
-      font-size: 18px;
-      line-height: 2; }
+      left: 0; }
+      .contact-page .contact-page-content .contact-body.in .contact-mail {
+        margin-left: 0;
+        transform: translate3d(0, 0, 0); }
+      .contact-page .contact-page-content .contact-body.in .contact-info {
+        margin-right: 0;
+        transform: translate3d(0, 0, 0); }
+      .contact-page .contact-page-content .contact-body .contact-animation {
+        box-sizing: border-box;
+        padding: 0 25px;
+        transition: margin, transform linear 0.3s; }
+      .contact-page .contact-page-content .contact-body h1 {
+        color: #27425E;
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 0 10px 0;
+        border-bottom: 1px solid #5dc1cf; }
+      .contact-page .contact-page-content .contact-body .contact-content-box {
+        max-width: 540px; }
+      .contact-page .contact-page-content .contact-body .contact-mail {
+        position: absolute;
+        top: 0;
+        left: 100px;
+        width: 50%;
+        height: 100%;
+        margin-left: -100px;
+        transform: translate3d(-100%, 0, 0); }
+        .contact-page .contact-page-content .contact-body .contact-mail table {
+          table-layout: fixed;
+          border-collapse: collapse;
+          border: none; }
+          .contact-page .contact-page-content .contact-body .contact-mail table tr, .contact-page .contact-page-content .contact-body .contact-mail table td {
+            padding: 0;
+            margin: 0;
+            font-size: 0; }
+          .contact-page .contact-page-content .contact-body .contact-mail table td {
+            padding-top: 17px; }
+          .contact-page .contact-page-content .contact-body .contact-mail table input, .contact-page .contact-page-content .contact-body .contact-mail table textarea {
+            font-size: 16px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #b6b6b6;
+            border-radius: 3px;
+            outline: none; }
+            .contact-page .contact-page-content .contact-body .contact-mail table input:HOVER, .contact-page .contact-page-content .contact-body .contact-mail table textarea:HOVER {
+              border-color: #999 #b3b3b3 #b3b3b3 #999; }
+            .contact-page .contact-page-content .contact-body .contact-mail table input:FOCUS, .contact-page .contact-page-content .contact-body .contact-mail table textarea:FOCUS {
+              border-color: #5dc1cf; }
+          .contact-page .contact-page-content .contact-body .contact-mail table input {
+            width: 260px;
+            height: 50px; }
+            .contact-page .contact-page-content .contact-body .contact-mail table input:last-child {
+              margin-left: 10px; }
+          .contact-page .contact-page-content .contact-body .contact-mail table textarea {
+            width: 530px;
+            height: 250px;
+            resize: none; }
+          .contact-page .contact-page-content .contact-body .contact-mail table button {
+            color: #5DC1CF;
+            border: 1px solid #5DC1CF;
+            padding: 7px 20px;
+            border-radius: 3px;
+            background: none;
+            font-size: 16px; }
+        .contact-page .contact-page-content .contact-body .contact-mail .contact-content-box {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%; }
+      .contact-page .contact-page-content .contact-body .contact-info {
+        position: absolute;
+        top: 0;
+        right: -100px;
+        width: 50%;
+        height: 100%;
+        margin-right: 100px;
+        transform: translate3d(100%, 0, 0); }
+        .contact-page .contact-page-content .contact-body .contact-info ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          color: #27425E;
+          font-size: 18px;
+          line-height: 2; }

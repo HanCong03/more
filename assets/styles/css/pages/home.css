@@ -14,14 +14,52 @@
     font-size: 16px; }
     .home-page .home-content h1, .home-page .home-content h2 {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      font-family: Raleway; }
     .home-page .home-content h1 {
       font-size: 40px;
       margin: 20px 0; }
     .home-page .home-content h2, .home-page .home-content .tlt {
-      font-size: 26px; }
+      font-size: 26px;
+      font-weight: normal; }
     .home-page .home-content p {
       line-height: 2; }
+    .home-page .home-content .button-group a {
+      position: relative;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #ffffff;
+      border-radius: 3px;
+      color: #ffffff;
+      font-size: 16px;
+      background: none;
+      margin-left: 10px;
+      font-family: Raleway;
+      cursor: default; }
+      .home-page .home-content .button-group a > span {
+        position: relative;
+        top: 0;
+        height: 0;
+        z-index: 2; }
+      .home-page .home-content .button-group a:HOVER:before {
+        height: 75%; }
+      .home-page .home-content .button-group a:before {
+        transition: height 0.3s;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 0;
+        background: rgba(255, 255, 255, 0.5);
+        transform: translate(-50%, -50%);
+        z-index: 1; }
+      .home-page .home-content .button-group a:first-child {
+        background: #3cb2bd;
+        border-color: #3cb2bd; }
   .home-page .home-bg {
     position: absolute;
     transform: translate3d(0, 0, 1px) scale(1.1, 1.1); }

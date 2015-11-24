@@ -18,4 +18,6 @@ jQuery(function ($) {
 
     window.hide = hide;
     window.show = show;
+
+    show();
 });

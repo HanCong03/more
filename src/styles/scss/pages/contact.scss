@@ -1,105 +1,169 @@
 .contact-page {
-  .contact-body {
-    width: 100%;
-    height: 600px;
+  position: relative;
+  top: 0;
+  left: 0;
 
-    position: relative;
+  width: 100%;
+  height: 800px;
+
+  .contact-page-bg {
+    width: 2560px;
+    height: 800px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -400px;
+    margin-left: -1280px;
+  }
+
+  .contact-page-content {
+    width: 100%;
+
+    position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
 
-    &.in {
-      .contact-mail {
-        margin-left: 0;
-        transform: translate3d(0, 0, 0);
-      }
+    .contact-body {
+      width: 100%;
+      height: 550px;
 
-      .contact-info {
-        margin-right: 0;
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
-    .contact-animation {
-      box-sizing: border-box;
-      padding: 0 25px;
-      transition: margin, transform linear .3s;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 30px;
-      font-weight: bold;
-      padding: 20px 0 10px 0;
-      border-bottom: 1px solid #5dc1cf;
-    }
-
-    .contact-content-box {
-      max-width: 540px;
-    }
-
-    .contact-mail {
-      position: absolute;
+      position: relative;
       top: 0;
-      left: 100px;
+      left: 0;
 
-      width: 50%;
-      height: 100%;
-
-      margin-left: -100px;
-
-      transform: translate3d(-100%, 0, 0);
-
-      table {
-        table-layout: fixed;
-        border-collapse: collapse;
-        border: none;
-
-        tr, td {
-          padding: 0;
-          margin: 0;
+      &.in {
+        .contact-mail {
+          margin-left: 0;
+          transform: translate3d(0, 0, 0);
         }
 
-        input {
-          width: 260px;
-          height: 40px;
-          box-sizing: border-box;
-
+        .contact-info {
+          margin-right: 0;
+          transform: translate3d(0, 0, 0);
         }
+      }
 
-        textarea {
+      .contact-animation {
+        box-sizing: border-box;
+        padding: 0 25px;
+        transition: margin, transform linear .3s;
+      }
 
-        }
+      h1 {
+        color: #27425E;
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 0 10px 0;
+        border-bottom: 1px solid #5dc1cf;
       }
 
       .contact-content-box {
+        max-width: 540px;
+      }
+
+      .contact-mail {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 100px;
 
-        width: 100%;
+        width: 50%;
+        height: 100%;
+
+        margin-left: -100px;
+
+        transform: translate3d(-100%, 0, 0);
+
+        table {
+          table-layout: fixed;
+          border-collapse: collapse;
+          border: none;
+
+          tr, td {
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+          }
+
+          td {
+            padding-top: 17px;
+          }
+
+          input, textarea {
+            font-size: 16px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #b6b6b6;
+            border-radius: 3px;
+            outline: none;
+
+            &:HOVER {
+              border-color: #999 #b3b3b3 #b3b3b3 #999;
+            }
+
+            &:FOCUS {
+              border-color: #5dc1cf;
+            }
+          }
+
+          input {
+            width: 260px;
+            height: 50px;
+
+            &:last-child {
+              margin-left: 10px;
+            }
+          }
+
+          textarea {
+            width: 530px;
+            height: 250px;
+            resize: none;
+          }
+
+          button {
+            color: #5DC1CF;
+            border: 1px solid #5DC1CF;
+            padding: 7px 20px;
+            border-radius: 3px;
+            background: none;
+            font-size: 16px;
+          }
+        }
+
+        .contact-content-box {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          width: 100%;
+        }
       }
-    }
 
-    .contact-info {
-      position: absolute;
-      top: 0;
-      right: -100px;
+      .contact-info {
+        position: absolute;
+        top: 0;
+        right: -100px;
 
-      width: 50%;
-      height: 100%;
+        width: 50%;
+        height: 100%;
 
-      margin-right: 100px;
+        margin-right: 100px;
 
-      transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
 
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
 
-        color: #27425E;
-        font-size: 18px;
-        line-height: 2;
+          color: #27425E;
+          font-size: 18px;
+          line-height: 2;
+        }
       }
     }
   }
