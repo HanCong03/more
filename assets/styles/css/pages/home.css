@@ -62,7 +62,8 @@
         border-color: #3cb2bd; }
   .home-page .home-bg {
     position: absolute;
-    transform: translate3d(0, 0, 1px) scale(1.1, 1.1); }
+    transform: translate3d(0, 0, 1px) scale(1.1, 1.1);
+    animation: home-bg-animation linear 25s alternate infinite; }
 
 @keyframes home-bg-animation {
   to {

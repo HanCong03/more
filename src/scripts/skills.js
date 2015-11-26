@@ -15,15 +15,17 @@ jQuery(function ($) {
     var HEIGHT = $skillBox.height();
     var COUNT = Math.floor(HEIGHT / (SPACE + ITEM_HEIGHT));
 
-    var PAGE_NAME = 'skills';
     var lastTime = 0;
     var INTERVAL = 10;
+
+    var isDisabled = false;
 
     var VALUES = [42, 78, 82, 91, 66, 88];
     var currentValues = [0, 0, 0, 0, 0, 0];
 
     var animationId = -1;
-    var animation = false;
+
+    var DELAY_TIMER = null;
 
     // init bg skills
     (function () {
@@ -40,21 +42,47 @@ jQuery(function ($) {
         }
     })();
 
-    $(document).on('scrollin', function (evt, inPages) {
-        if (!inPages[PAGE_NAME]) {
+    $(document).on('activepage', function (evt, pageName) {
+        if (pageName !== 'skill') {
+            clear();
             return;
         }
 
         start();
-    }).on('scrollout', function (evt, outPages) {
-        if (!outPages[PAGE_NAME]) {
+    });
+
+    function start() {
+        isDisabled = false;
+
+        clearTimeout(DELAY_TIMER);
+
+        DELAY_TIMER = setTimeout(function () {
+            next();
+        }, 300);
+    }
+
+    function clear() {
+        if (isDisabled) {
             return;
         }
 
-        stop();
-    }).on('welcomeshow', function () {
-        stop();
-    });
+        isDisabled = true;
+        cancelAnimationFrame(animationId);
+        currentValues = [0, 0, 0, 0, 0, 0];
+
+        for (var i = 0, len = VALUES.length; i < len; i++) {
+            $skillBox[i].innerHTML = '';
+            $labels[i].innerHTML = '';
+        }
+    }
+
+    function next() {
+        if (isDisabled) {
+            return;
+        }
+
+        animationId = requestAnimationFrame(inc);
+    }
 
     function inc(timestamp) {
         if (timestamp - lastTime < INTERVAL) {
@@ -75,22 +103,6 @@ jQuery(function ($) {
         }
     }
 
-    function start() {
-        animation = true;
-        next();
-    }
-
-    function stop() {
-        animation = false;
-        cancelAnimationFrame(animationId);
-        currentValues = [0, 0, 0, 0, 0, 0];
-
-        for (var i = 0, len = VALUES.length; i < len; i++) {
-            $skillBox[i].innerHTML = '';
-            $labels[i].innerHTML = '';
-        }
-    }
-
     function getItems(index) {
         var showCount = Math.round((currentValues[index] / 100) * COUNT);
         var items = [];
@@ -108,14 +120,6 @@ jQuery(function ($) {
         }
 
         return items.reverse().join('');
-    }
-
-    function next() {
-        if (!animation) {
-            return;
-        }
-
-        animationId = requestAnimationFrame(inc);
     }
 
     function update(index) {

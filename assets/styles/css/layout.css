@@ -19,13 +19,21 @@ html, body {
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    transition: transform 0.3s ease-out; }
   .main .welcome-box {
-    transform: translateY(-100%); }
+    transform: translateY(0); }
   .main .page-box {
     top: 100px;
     transform: translateY(0); }
-  .main .banner {
-    display: none; }
   .main .key {
     color: #5DC1CF; }
+  .main .welcome-box {
+    overflow: hidden; }
+    .main .welcome-box.invisible {
+      transform: translateY(-100%); }
+  .main .page-box {
+    top: 100px;
+    transform: translateY(100%); }
+    .main .page-box.visible {
+      transform: translateY(0); }

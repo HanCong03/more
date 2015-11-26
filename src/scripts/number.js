@@ -12,17 +12,49 @@ jQuery(function ($) {
     var DURATION  = 1000;
     var startTime = -1;
 
+    var isDisabled = false;
+    var DELAY_TIMER = null;
+
     var id;
 
-    start();
+    $(document).on('activepage', function (evt, name) {
+        if (name !== 'number') {
+            clear();
+            return;
+        }
 
-    window.start = start;
+        start();
+    });
 
     function start() {
-        next();
+        isDisabled = false;
+
+        clearTimeout(DELAY_TIMER);
+
+        DELAY_TIMER = setTimeout(function () {
+            next();
+        }, 300);
+    }
+
+    function clear() {
+        if (isDisabled) {
+            return;
+        }
+
+        startTime = -1;
+        cancelAnimationFrame(id);
+        isDisabled = true;
+
+        for (var i = 0, len = NUBMERS.length; i < len; i++) {
+            $labels[i].innerHTML = '0+';
+        }
     }
 
     function next() {
+        if (isDisabled) {
+            return;
+        }
+
         id = requestAnimationFrame(animation);
     }
 

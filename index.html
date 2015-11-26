@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="/assets/styles/css/layout.css">
     <link rel="stylesheet" href="/assets/styles/css/page-box.css">
     <link rel="stylesheet" href="/assets/styles/css/scrollbar.css">
-    <!--<link rel="stylesheet" href="/assets/styles/css/banner.css">-->
-    <!--<link rel="stylesheet" href="/assets/styles/css/page.css">-->
+    <link rel="stylesheet" href="/assets/styles/css/banner.css">
 
-    <!--<link rel="stylesheet" href="/assets/styles/css/pages/welcome.css">-->
     <link rel="stylesheet" href="/assets/styles/css/pages.css">
+    <link rel="stylesheet" href="/assets/styles/css/right-side.css">
+
+    <link rel="stylesheet" href="/assets/styles/css/welcome.css">
+
     <link rel="stylesheet" href="/assets/styles/css/pages/home.css">
     <link rel="stylesheet" href="/assets/styles/css/pages/about.css">
     <link rel="stylesheet" href="/assets/styles/css/pages/service.css">
@@ -29,43 +31,47 @@
     <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
     <script src="/bower_components/textillate/jquery.textillate.js"></script>
 
-    <!--<script src="src/scripts/router.js"></script>-->
-    <!--<script src="src/scripts/linker.js"></script>-->
-    <!--<script src="src/scripts/switch.js"></script>-->
-    <!--<script src="src/scripts/page-size.js"></script>-->
-    <!--<script src="src/scripts/page-position.js"></script>-->
-    <!--<script src="src/scripts/scroll.js"></script>-->
+    <script src="/src/scripts/ns.js"></script>
 
+    <script src="/src/scripts/box-switch.js"></script>
+    <script src="/src/scripts/page-switch.js"></script>
+    <script src="/src/scripts/controller.js"></script>
+    <script src="/src/scripts/scroll.js"></script>
+    <script src="/src/scripts/nav-active.js"></script>
+    <script src="/src/scripts/linker.js"></script>
+
+    <script src="/src/scripts/welcome.js"></script>
     <script src="src/scripts/home.js"></script>
-    <!--<script src="src/scripts/about.js"></script>-->
     <script src="src/scripts/skills.js"></script>
-    <!--<script src="src/scripts/product.js"></script>-->
     <script src="src/scripts/number.js"></script>
     <script src="src/scripts/contact.js"></script>
-
-    <!--<script src="src/scripts/router.js"></script>-->
-
-    <!--<script src="src/scripts/banner.js"></script>-->
-    <!--<script src="src/scripts/linker.js"></script>-->
-    <!--<script src="src/scripts/page-switch.js"></script>-->
-    <!--<script src="src/scripts/scroll.js"></script>-->
-    <!--<script src="src/scripts/pages/home.js"></script>-->
 </head>
 <body>
     <div class="main">
-        <div class="banner">
-            <div class="inner-banner">
-                <img class="main-logo" src="/assets/images/logo.svg" height="80">
-                <ul class="nav">
-                    <li><a to="home">HOME</a></li>
-                    <li><a to="about">ABOUT</a></li>
-                    <li><a to="service">SERVICE</a></li>
-                    <li><a to="products">PRODUCTS</a></li>
-                    <li><a to="brands">BRANDS</a></li>
-                    <li><a to="contact">CONTACT</a></li>
-                    <li><a>PRODUCT CATALOG</a></li>
-                </ul>
+
+        <div class="banner-wrap">
+            <div class="banner">
+                <div class="inner-banner">
+                    <a class="logo-wrap" to="welcome">
+                        <img class="main-logo" src="/assets/images/logo.png" height="80">
+                    </a>
+                    <ul class="nav">
+                        <li><a to="home">HOME</a></li>
+                        <li><a to="about">ABOUT</a></li>
+                        <li><a to="service">SERVICE</a></li>
+                        <li><a to="product">PRODUCTS</a></li>
+                        <li><a to="brands">BRANDS</a></li>
+                        <li><a to="contact">CONTACT</a></li>
+                        <li><a>PRODUCT CATALOG</a></li>
+                    </ul>
+                </div>
             </div>
+
+            <ul class="banner-hotspot">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
 
         <div class="welcome-box">
@@ -79,11 +85,12 @@
                 <!--</a>-->
                 welcome
             </div>
+            <img src="/assets/images/welcome/bg.png" class="welcome-bg">
         </div>
 
         <div class="page-box">
             <div class="page-container">
-                <div class="page home-page">
+                <div class="page home-page" positionable name="home">
                     <div class="home-content">
                         <div class="tlt"><h2 id="tltText">We are products supplier</h2></div>
 
@@ -98,14 +105,14 @@
                         </p>
 
                         <div class="button-group">
-                            <a><span>ABOUT US</span></a>
+                            <a to="about"><span>ABOUT US</span></a>
                             <a><span>EASY BUSINESS</span></a>
                         </div>
                     </div>
                     <img id="homeBg" class="home-bg" src="/assets/images/home/bg.jpg">
                 </div>
 
-                <div class="page about-page">
+                <div class="page about-page" positionable name="about">
                     <img src="/assets/images/about/bg.jpg" class="about-head-bg">
 
                     <div class="about-head">
@@ -137,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="page service-page">
+                <div class="page service-page" positionable name="service">
                     <div class="page-title">
                         <h1>SERVICE</h1>
                         <h2><span class="key">Do more</span> than you thought</h2>
@@ -241,7 +248,7 @@
                     </div>
                 </div>
 
-                <div class="page work-page">
+                <div class="page work-page" name="work">
                     <div class="page-title">
                         <h1>HOW WE WORK</h1>
                         <h2><span class="key">Do more</span> than you thought</h2>
@@ -269,7 +276,7 @@
                     </div>
                 </div>
 
-                <div class="page skill-page">
+                <div class="page skill-page" name="skill">
                     <div class="page-title">
                         <h1>OUT SKILLS</h1>
                         <h2><span class="key">Do more</span> than you thought</h2>
@@ -342,7 +349,7 @@
                     </div>
                 </div>
 
-                <div class="page product-page">
+                <div class="page product-page" positionable name="product">
                     <div class="page-content">
                         <div class="page-title">
                             <h1>PRODUCTS</h1>
@@ -364,7 +371,7 @@
                     <img class="product-bg" src="/assets/images/product/bg.jpg">
                 </div>
 
-                <div class="page number-page">
+                <div class="page number-page" name="number">
                     <div class="page-title">
                         <h1>OUR NUMBERS</h1>
                         <h2><span class="key">Other cool</span> fact about us</h2>
@@ -389,7 +396,7 @@
                     </ul>
                 </div>
 
-                <div class="page contact-page">
+                <div class="page contact-page" positionable name="contact">
                     <div class="contact-page-content">
                         <div class="page-title">
                             <h1>CONTACT</h1>
@@ -441,9 +448,23 @@
                     </div>
                     <img src="/assets/images/contact/bg.jpg" class="contact-page-bg">
                 </div>
+
+                <div class="copyright">
+                    &copy; Copyright 2015 morekasi.com
+                </div>
             </div>
+
             <div class="left-side"></div>
-            <div class="right-side"></div>
+            <div class="right-side">
+                <ul class="active-point-wrap">
+                    <li name="home"></li>
+                    <li name="about"></li>
+                    <li name="service"></li>
+                    <li name="product"></li>
+                    <li name="brands"></li>
+                    <li name="contact"></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

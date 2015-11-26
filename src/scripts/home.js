@@ -24,23 +24,23 @@ jQuery(function ($) {
     var containerWidth;
     var containerHeight;
 
-    //$('.tlt').textillate({
-    //    loop: true,
-    //    minDisplayTime: 2000,
-    //    autoStart: true,
-    //    in: {
-    //        effect: 'bounceIn',
-    //        reverse: true
-    //    },
-    //    out: {
-    //        effect: 'flipOutY',
-    //        reverse: true,
-    //        callback: function () {
-    //            index = (index + 1) % 4;
-    //            document.getElementById('tltText').innerHTML = TEXT[index];
-    //        }
-    //    }
-    //});
+    $('.tlt').textillate({
+        loop: true,
+        minDisplayTime: 2000,
+        autoStart: true,
+        in: {
+            effect: 'bounceIn',
+            reverse: true
+        },
+        out: {
+            effect: 'flipOutY',
+            reverse: true,
+            callback: function () {
+                index = (index + 1) % 4;
+                document.getElementById('tltText').innerHTML = TEXT[index];
+            }
+        }
+    });
 
     resize();
 

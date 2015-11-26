@@ -55,10 +55,10 @@
                 margin-bottom: 3px;
                 border-radius: 5px;
                 background: #4C4E5E; }
-                .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box .skill-item.odd-skill-box, .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-bg-box .skill-item.odd-skill-box {
-                  background: #BAD55E; }
-                .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box .skill-item.even-skill-box, .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-bg-box .skill-item.even-skill-box {
-                  background: #0BFCB1; }
+            .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box.odd-skill-box .skill-show {
+              background: #BAD55E; }
+            .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box.even-skill-box .skill-show {
+              background: #0BFCB1; }
           .skill-page .skill-body .skill-list li .skill-wrap .skill-label {
             color: #ffffff;
             font-size: 14px;

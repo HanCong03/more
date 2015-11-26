@@ -1,0 +1,26 @@
+.welcome-box {
+
+  .welcome-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .welcome-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2560px;
+
+    //animation: welcome-bg-animation 40s infinite alternate;
+  }
+}
+
+@keyframes welcome-bg-animation {
+  to {
+    transform: translate3d(-200px, 0, 0);
+  }
+}

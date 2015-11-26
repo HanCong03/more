@@ -10,3 +10,7 @@
   top: 0;
   left: 0;
   width: 2560px; }
+
+@keyframes welcome-bg-animation {
+  to {
+    transform: translate3d(-200px, 0, 0); } }

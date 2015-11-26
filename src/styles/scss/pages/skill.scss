@@ -75,12 +75,18 @@
                 margin-bottom: 3px;
                 border-radius: 5px;
                 background: #4C4E5E;
+              }
+            }
 
-                &.odd-skill-box {
+            .skill-box {
+              &.odd-skill-box {
+                .skill-show {
                   background: #BAD55E;
                 }
+              }
 
-                &.even-skill-box {
+              &.even-skill-box {
+                .skill-show {
                   background: #0BFCB1;
                 }
               }
