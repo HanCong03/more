@@ -21,7 +21,8 @@
       margin: 20px 0; }
     .home-page .home-content h2, .home-page .home-content .tlt {
       font-size: 26px;
-      font-weight: normal; }
+      font-weight: normal;
+      font-family: Raleway; }
     .home-page .home-content p {
       line-height: 2; }
     .home-page .home-content .button-group a {

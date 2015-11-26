@@ -6,7 +6,7 @@
 'use strict';
 
 jQuery(function ($) {
-    var $pageContainer = $('.page-container');
+    var $pageWrap = $('.page-wrap');
     var pageMap = {};
 
     (function () {
@@ -26,7 +26,7 @@ jQuery(function ($) {
         }
 
         if (!pageName) {
-            $pageContainer[0].scrollTop = 0;
+            $pageWrap[0].scrollTop = 0;
 
             if (cb) {
                 cb();
@@ -39,7 +39,9 @@ jQuery(function ($) {
     };
 
     MORE.setToPage = function (pageName) {
-        $pageContainer[0].scrollTop = pageMap[pageName].offsetTop;
+        if (pageMap[pageName]) {
+            $pageWrap[0].scrollTop = pageMap[pageName].offsetTop;
+        }
     };
 
     function toPage(pageName, cb) {
@@ -56,7 +58,7 @@ jQuery(function ($) {
         MORE.disableScroll();
         MORE.activePage(pageName, pageName);
 
-        $pageContainer.animate({
+        $pageWrap.animate({
             scrollTop: page.offsetTop
         }, 500, function () {
             MORE.enableScroll();

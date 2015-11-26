@@ -9,7 +9,7 @@ jQuery(function ($) {
     var $labels = $('.number-label');
     var NUBMERS = [6, 5, 20, 500, 300];
 
-    var DURATION  = 1000;
+    var DURATION  = 700;
     var startTime = -1;
 
     var isDisabled = false;

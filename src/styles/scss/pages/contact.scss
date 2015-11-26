@@ -27,29 +27,28 @@
     z-index: 2;
 
     .contact-body {
-      width: 100%;
+      width: 1080px;
       height: 550px;
 
-      position: relative;
-      top: 0;
-      left: 0;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: space-between;
+
+      margin: 0 auto;
 
       &.in {
         .contact-mail {
-          margin-left: 0;
           transform: translate3d(0, 0, 0);
         }
 
         .contact-info {
-          margin-right: 0;
           transform: translate3d(0, 0, 0);
         }
       }
 
       .contact-animation {
-        box-sizing: border-box;
-        padding: 0 25px;
-        transition: margin, transform linear .3s;
+        transition: transform linear .3s;
       }
 
       h1 {
@@ -61,19 +60,9 @@
         border-bottom: 1px solid #5dc1cf;
       }
 
-      .contact-content-box {
-        max-width: 540px;
-      }
-
       .contact-mail {
-        position: absolute;
-        top: 0;
-        left: 100px;
-
-        width: 50%;
+        width: 640px;
         height: 100%;
-
-        margin-left: -100px;
 
         transform: translate3d(-100%, 0, 0);
 
@@ -110,7 +99,7 @@
           }
 
           input {
-            width: 260px;
+            width: 300px;
             height: 50px;
 
             &:last-child {
@@ -119,7 +108,7 @@
           }
 
           textarea {
-            width: 530px;
+            width: 610px;
             height: 250px;
             resize: none;
           }
@@ -135,23 +124,13 @@
         }
 
         .contact-content-box {
-          position: absolute;
-          top: 0;
-          right: 0;
-
           width: 100%;
         }
       }
 
       .contact-info {
-        position: absolute;
-        top: 0;
-        right: -100px;
-
-        width: 50%;
+        width: 400px;
         height: 100%;
-
-        margin-right: 100px;
 
         transform: translate3d(100%, 0, 0);
 

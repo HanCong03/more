@@ -6,7 +6,7 @@
 'use strict';
 
 jQuery(function () {
-    var pageContainer = $('.page-container')[0];
+    var pageWrap = $('.page-wrap')[0];
     var timer = null;
     var isDisabled = false;
     var DELAY = 66;
@@ -23,7 +23,7 @@ jQuery(function () {
         isDisabled = false;
     };
 
-    $(pageContainer).on('scroll', function () {
+    $(pageWrap).on('scroll', function () {
         if (timer || isDisabled) {
             return;
         }
@@ -40,8 +40,8 @@ jQuery(function () {
 
         var subPage;
 
-        var scrollTop = pageContainer.scrollTop;
-        var boxHeight = pageContainer.offsetHeight;
+        var scrollTop = pageWrap.scrollTop;
+        var boxHeight = pageWrap.offsetHeight;
 
         var limit = scrollTop + boxHeight / 2;
 
