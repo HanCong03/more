@@ -1,32 +1,66 @@
 .work-page {
   .work-content {
     width: 100%;
-    height: 362px;
+    height: 402px;
     background: #ffffff;
 
     .work-body {
-      width: 1080px;
+      width: 100%;
       height: 100%;
       overflow: hidden;
 
-      margin: 0 auto;
-
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      flex-wrap: wrap;
 
       color: #ffffff;
 
+      .work-top, .work-bottom {
+        width: 100%;
+        height: 200px;
+
+        display: flex;
+      }
+
       .work-box {
-        width: 539px;
-        height: 180px;
+        width: 50%;
+        height: 200px;
 
         box-sizing: border-box;
         padding: 20px;
 
-        background-size: 539px 180px;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        overflow: hidden;
+
+        &:first-child {
+          border-right: 1px solid #ffffff;
+        }
+
+        &:last-child {
+          border-left: 1px solid #ffffff;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          z-index: 1;
+
+          width: 1280px;
+          height: 200px;
+        }
 
         h1, h2 {
+          position: relative;
+          top: 0;
+          left: 0;
+
+          z-index: 2;
+
           padding: 0;
           margin: 0;
         }
@@ -42,24 +76,6 @@
           padding-top: 10px;
           font-size: 16px;
           font-weight: normal;
-        }
-
-        &.work-box-lt {
-          background-image: url('/assets/images/work/lt.jpg');
-        }
-
-        &.work-box-rt {
-          background-image: url('/assets/images/work/rt.jpg');
-        }
-
-        &.work-box-lb {
-          margin-top: 2px;
-          background-image: url('/assets/images/work/lb.jpg');
-        }
-
-        &.work-box-rb {
-          margin-top: 2px;
-          background-image: url('/assets/images/work/rb.jpg');
         }
       }
     }
