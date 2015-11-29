@@ -60,7 +60,7 @@ jQuery(function ($) {
 
         $pageWrap.animate({
             scrollTop: page.offsetTop
-        }, 500, function () {
+        }, 700, 'easeOutCirc', function () {
             MORE.enableScroll();
 
             if (cb) {
