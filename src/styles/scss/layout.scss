@@ -19,6 +19,10 @@ html, body {
   height: 100%;
   overflow: hidden;
 
+  img {
+    transform: translate3d(0, 0, 0);
+  }
+
   .welcome-box, .page-box {
     position: absolute;
     top: 0;
@@ -34,7 +38,7 @@ html, body {
   }
 
   .page-box {
-    top: 100px;
+    top: 70px;
     transform: translateY(0);
   }
 
@@ -51,7 +55,7 @@ html, body {
   }
 
   .page-box {
-    top: 100px;
+    top: 70px;
     transform: translateY(100%);
 
     &.visible {
