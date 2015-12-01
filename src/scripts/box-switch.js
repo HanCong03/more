@@ -10,10 +10,12 @@ jQuery(function () {
     var $pageBox = $('.page-box');
     var $banner = $('.banner');
 
-    var callback = null;
+    var cbs = [];
 
     function toPageBox(cb) {
-        callback = cb;
+        if (cb) {
+            cbs.push(cb);
+        }
 
         $welcomeBox.addClass('invisible');
         $pageBox.addClass('visible');
@@ -21,7 +23,7 @@ jQuery(function () {
     }
 
     function toWelcomeBox(cb) {
-        callback = cb;
+        cbs.push(cb);
 
         $welcomeBox.removeClass('invisible');
         $pageBox.removeClass('visible');
@@ -29,11 +31,11 @@ jQuery(function () {
     }
 
     $welcomeBox.on('transitionend', function () {
-        if (!callback) {
-            return;
-        }
+        var cb;
 
-        callback();
+        while (cb = cbs.shift()) {
+            cb();
+        }
     });
 
     MORE.toPageBox = toPageBox;

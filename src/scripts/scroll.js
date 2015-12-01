@@ -8,27 +8,31 @@
 jQuery(function () {
     var pageWrap = $('.page-wrap')[0];
     var timer = null;
-    var isDisabled = false;
+    var disableCount = 0;
     var DELAY = 66;
     var pages = $('.page[positionable]');
     var allPages = $('.page');
 
     MORE.disableScroll = function () {
-        isDisabled = true;
+        disableCount++;
         clearTimeout(timer);
         timer = null;
     };
 
     MORE.enableScroll = function () {
-        isDisabled = false;
+        disableCount--;
     };
 
     $(pageWrap).on('scroll', function () {
-        if (timer || isDisabled) {
+        if (timer || disableCount !== 0) {
             return;
         }
 
         start();
+    }).on('wheel', function (evt) {
+        if (disableCount !== 0) {
+            evt.preventDefault();
+        }
     });
 
     function start() {

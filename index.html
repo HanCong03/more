@@ -36,7 +36,6 @@
     <script src="/src/scripts/ns.js"></script>
 
 
-    <script src="/src/scripts/welcome.js"></script>
     <script src="/src/scripts/box-switch.js"></script>
     <script src="/src/scripts/page-switch.js"></script>
     <script src="/src/scripts/controller.js"></script>
@@ -53,7 +52,7 @@
 <body>
     <div class="main">
 
-        <div class="banner-wrap">
+        <div id="bannerWrap" class="banner-wrap">
             <div class="banner">
                 <div class="inner-banner">
                     <a class="logo-wrap" to="welcome">
@@ -246,7 +245,12 @@
 </svg>
                 </div>
                 <a to="home" class="entry-btn">
-                    <img src="/assets/images/welcome/entry.png">
+                    <div class="entry-icon-wrap">
+                        <img src="/assets/images/welcome/entry.png" class="entry-icon">
+                        <img src="/assets/images/welcome/entry-hover.png" class="entry-hover-icon">
+                    </div>
+                    <p>Take a scroll to learn more about us</p>
+                    <span class="scroll-down"></span>
                 </a>
             </div>
             <img src="/assets/images/welcome/bg.png" class="welcome-bg">
@@ -597,7 +601,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <button type="submit">Submit mail</button>
+                                                        <a class="submit-button"><span>Submit mail</span></a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

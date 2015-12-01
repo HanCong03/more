@@ -29,18 +29,60 @@
           stroke: none !important; }
   .welcome-box .welcome-content .entry-btn {
     cursor: pointer;
-    transition: bottom linear 0.3s;
-    width: 356px;
-    height: 150px;
+    transition: bottom ease-out 0.3s;
+    color: #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 256px;
+    height: 130px;
     position: absolute;
-    bottom: -150px;
+    bottom: -130px;
     left: 50%;
-    margin-left: -178px; }
+    margin-left: -128px; }
     .welcome-box .welcome-content .entry-btn.show {
-      bottom: 50px; }
-    .welcome-box .welcome-content .entry-btn img {
-      width: 100%;
-      height: 100%; }
+      bottom: 30px; }
+    .welcome-box .welcome-content .entry-btn:HOVER {
+      color: #000; }
+      .welcome-box .welcome-content .entry-btn:HOVER .scroll-down {
+        border-color: #000; }
+      .welcome-box .welcome-content .entry-btn:HOVER .entry-hover-icon {
+        opacity: 1 !important; }
+      .welcome-box .welcome-content .entry-btn:HOVER .entry-icon {
+        opacity: 0 !important; }
+    .welcome-box .welcome-content .entry-btn .entry-icon-wrap {
+      width: 42px;
+      height: 50px;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .welcome-box .welcome-content .entry-btn .entry-icon-wrap img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity ease-out 0.3s; }
+        .welcome-box .welcome-content .entry-btn .entry-icon-wrap img.entry-icon {
+          opacity: 1; }
+        .welcome-box .welcome-content .entry-btn .entry-icon-wrap img.entry-hover-icon {
+          opacity: 0; }
+    .welcome-box .welcome-content .entry-btn p {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      transition: color ease-out 0.3s; }
+    .welcome-box .welcome-content .entry-btn .scroll-down {
+      animation: scroll-down-animation linear 2s infinite alternate;
+      transition: border-color ease-out 0.3s;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #ffffff;
+      border-width: 0 0 2px 2px;
+      transform: rotate(-45deg);
+      transform-origin: 50% 50%; }
 
 .welcome-box .welcome-bg {
   position: absolute;
@@ -52,3 +94,15 @@
 @keyframes welcome-bg-animation {
   to {
     transform: translate3d(-200px, 0, 0); } }
+
+@keyframes scroll-down-animation {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-45deg); }
+  20% {
+    transform: translate3d(0, 0, 0) rotate(-45deg); }
+  50% {
+    transform: translate3d(0, -10px, 0) rotate(-45deg); }
+  80% {
+    transform: translate3d(0, 0px, 0) rotate(-45deg); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-45deg); } }

@@ -45,6 +45,7 @@ jQuery(function () {
     MORE.clearNavState = function () {
         navMap[prev] && navMap[prev].removeClass('active');
         pointMap[prev] && pointMap[prev].removeClass('active');
+        prev = null;
     };
 
     function active(name) {

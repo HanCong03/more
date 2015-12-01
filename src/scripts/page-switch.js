@@ -39,6 +39,8 @@ jQuery(function ($) {
     };
 
     MORE.setToPage = function (pageName) {
+        MORE.activePage(pageName, pageName);
+
         if (pageMap[pageName]) {
             $pageWrap[0].scrollTop = pageMap[pageName].offsetTop;
         }
