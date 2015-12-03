@@ -28,6 +28,7 @@
       position: relative;
       top: 0;
       left: 0;
+      overflow: hidden;
       border-right: 1px dashed #ffffff; }
       .service-page .service-content .service-list li:last-child {
         border-right: none; }
@@ -45,13 +46,17 @@
           flex-direction: column;
           justify-content: space-between;
           align-items: center; }
+          .service-page .service-content .service-list li .normal-box .icon-box > label {
+            font-weight: bold;
+            font-size: 18px; }
           .service-page .service-content .service-list li .normal-box .icon-box .icon-inner-box {
             display: flex;
             height: 80px;
             justify-items: center;
             align-items: center; }
         .service-page .service-content .service-list li .normal-box p {
-          padding: 40px 35px;
+          padding: 40px 20px;
+          margin: 0;
           line-height: 2;
           font-size: 16px; }
       .service-page .service-content .service-list li .hover-box {
@@ -60,7 +65,7 @@
         cursor: default;
         line-height: 2;
         box-sizing: border-box;
-        padding: 80px 30px;
+        padding: 20px 10px;
         position: absolute;
         top: 0;
         left: 0;

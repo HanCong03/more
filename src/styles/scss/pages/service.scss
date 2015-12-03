@@ -42,6 +42,7 @@
         top: 0;
         left: 0;
 
+        overflow: hidden;
         border-right: 1px dashed #ffffff;
 
         &:last-child {
@@ -69,6 +70,11 @@
             justify-content: space-between;
             align-items: center;
 
+            >label {
+              font-weight: bold;
+              font-size: 18px;
+            }
+
             .icon-inner-box {
               display: flex;
               height: 80px;
@@ -79,7 +85,8 @@
           }
 
           p {
-            padding: 40px 35px;
+            padding: 40px 20px;
+            margin: 0;
             line-height: 2;
             font-size: 16px;
           }
@@ -95,7 +102,7 @@
 
           box-sizing: border-box;
 
-          padding: 80px 30px;
+          padding: 20px 10px;
 
           position: absolute;
           top: 0;
