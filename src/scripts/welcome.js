@@ -62,7 +62,7 @@ jQuery(function ($) {
             allowScroll = true;
             window.setTimeout(function () {
                 MORE.enableScroll();
-            }, 1000);
+            }, 500);
         });
     });
 
