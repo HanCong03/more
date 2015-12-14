@@ -79,13 +79,13 @@
             }
 
             .skill-box {
-              &.odd-skill-box {
+              .low-skill-item {
                 .skill-show {
                   background: #BAD55E;
                 }
               }
 
-              &.even-skill-box {
+              .high-skill-item {
                 .skill-show {
                   background: #0BFCB1;
                 }

@@ -119,7 +119,13 @@ jQuery(function ($) {
             items.push('<div class="' + className + '"></div>');
         }
 
-        return items.reverse().join('');
+        if (showCount < COUNT / 2) {
+            className = 'low-skill-item';
+        } else {
+            className = 'high-skill-item';
+        }
+
+        return '<div class="' + className + '">' + items.reverse().join('') + '</div>';
     }
 
     function update(index) {

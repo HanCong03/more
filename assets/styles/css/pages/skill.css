@@ -55,9 +55,9 @@
                 margin-bottom: 3px;
                 border-radius: 5px;
                 background: #4C4E5E; }
-            .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box.odd-skill-box .skill-show {
+            .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box .low-skill-item .skill-show {
               background: #BAD55E; }
-            .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box.even-skill-box .skill-show {
+            .skill-page .skill-body .skill-list li .skill-wrap .skill-box-wrap .skill-box .high-skill-item .skill-show {
               background: #0BFCB1; }
           .skill-page .skill-body .skill-list li .skill-wrap .skill-label {
             color: #ffffff;
