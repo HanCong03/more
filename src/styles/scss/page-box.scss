@@ -10,15 +10,12 @@ $sideWidth: 25px;
 
     z-index: 1;
 
-    display: flex;
-
     background: rgba(240, 240, 240, .5);
 
     overflow: hidden;
     overflow-y: auto;
 
     .page-container {
-      flex: 1;
       margin: 0 $sideWidth;
 
       position: relative;

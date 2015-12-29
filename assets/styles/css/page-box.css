@@ -5,12 +5,10 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  display: flex;
   background: rgba(240, 240, 240, 0.5);
   overflow: hidden;
   overflow-y: auto; }
   .page-box .page-wrap .page-container {
-    flex: 1;
     margin: 0 25px;
     position: relative;
     top: 0;

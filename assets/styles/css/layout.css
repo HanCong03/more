@@ -39,3 +39,5 @@ html, body {
     transform: translateY(100%); }
     .main .page-box.visible {
       transform: translateY(0); }
+  .main input::-webkit-input-placeholder, .main textarea::-webkit-input-placeholder {
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif; }

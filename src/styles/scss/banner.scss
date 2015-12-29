@@ -144,6 +144,7 @@
 
           >a {
             cursor: pointer;
+            text-decoration: none;
             @include banner-transition();
 
             &:HOVER {
@@ -152,11 +153,14 @@
           }
 
           &:last-child {
-            font-style: normal;
-            font-weight: normal;
             border-left: 1px solid #00A4A6;
             box-sizing: border-box;
-            color: #00B0A1;
+
+            >a {
+              font-style: normal;
+              font-weight: normal;
+              color: #00B0A1;
+            }
           }
         }
       }

@@ -6,7 +6,7 @@
       display: block;
       margin-top: 20px;
       font-style: italic;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -102,7 +102,9 @@
         }
 
         > label {
-          font: 600 20px/1.5 "Raleway";
+          color: #333366;
+          font-style: italic;
+          font-weight: bold;
         }
       }
     }

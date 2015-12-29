@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .service-list {
+            width: 1080px;
+            height: 500px;
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            align-items: stretch;
+        }
+
+        li {
+            flex: 1;
+
+            margin: 0;
+            padding: 0;
+            background: red;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        li:HOVER > .hover-box {
+            display: block;
+        }
+
+        .hover-box {
+            display: none;
+
+            width: 100%;
+            height: 100%;
+
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left: 0;*/
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="service-list">
+        <li>
+            <div class="hover-box">
+                <p>
+                    To help you develop the new project,it could be a valuable idea,a design or a sample,We make your vision to be reality.we are always interesting in the excellent ideas,and never hesitate to invest them.
+                </p>
+                <img class="bg" src="/assets/images/service/item-bg.jpg"/>
+            </div>
+        </li>
+
+        <li>
+            <div class="hover-box">
+                <p>
+                    To avoid any risks or loss before or during the orders,you need the eyes to know what really happenned at factories.We are your eyes,to help you to inspect the factories or the production,to control the quality,to follow the shipment.everything will be showed to you from a trustful report.
+                </p>
+                <img class="bg" src="/assets/images/service/item-bg.jpg"/>
+            </div>
+        </li>
+
+        <li>
+            <div class="hover-box">
+                <p>
+                    To organize different bulk cargos from differnt factories,from differnt place to one place,or arrange the containers transport from manufacturers to port,and arrange the customs declaration,we have our own truck motocade and custom broker.
+                </p>
+                <img class="bg" src="/assets/images/service/item-bg.jpg"/>
+            </div>
+        </li>
+
+        <li>
+            <div class="hover-box">
+                <p>
+                    To help you to creat an attactive design and put the creative ideas on your packages,it will be much more helpful to sell for markets,our professional design team will work with you.
+                </p>
+                <img class="bg" src="/assets/images/service/item-bg.jpg"/>
+            </div>
+        </li>
+
+        <li>
+            <div class="hover-box">
+                <p>
+                    To experience our one-stop service,you will find that choosing us as your buying office(partner) will be your most smartest choice,we thought what you think,and did what you expect.
+                </p>
+                <img class="bg" src="/assets/images/service/item-bg.jpg"/>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

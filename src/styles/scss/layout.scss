@@ -62,4 +62,9 @@ html, body {
       transform: translateY(0);
     }
   }
+
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+  }
 }

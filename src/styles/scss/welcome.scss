@@ -49,28 +49,17 @@
 
     .entry-btn {
       cursor: pointer;
+      font-size: 18px;
+      transition: bottom ease-out 0.3s;
+      color: #ffffff;
 
       &.show {
         bottom: 30px;
       }
 
-      transition: bottom ease-out 0.3s;
-
-      color: #ffffff;
-
       &:HOVER {
-        color: #000;
-
-        .scroll-down {
-          border-color: #000;
-        }
-
-        .entry-hover-icon {
-          opacity: 1!important;
-        }
-
-        .entry-icon {
-          opacity: 0!important;
+        >p {
+          color: #333366;
         }
       }
 

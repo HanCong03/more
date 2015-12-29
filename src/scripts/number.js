@@ -7,7 +7,7 @@
 
 jQuery(function ($) {
     var $labels = $('.number-label');
-    var NUBMERS = [6, 5, 20, 500, 300];
+    var NUBMERS = [6, 5, 24, 564, 681];
 
     var DURATION  = 700;
     var startTime = -1;

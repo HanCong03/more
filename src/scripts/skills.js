@@ -119,7 +119,7 @@ jQuery(function ($) {
             items.push('<div class="' + className + '"></div>');
         }
 
-        if (showCount < COUNT / 2) {
+        if (showCount < Math.floor(COUNT * 0.7)) {
             className = 'low-skill-item';
         } else {
             className = 'high-skill-item';

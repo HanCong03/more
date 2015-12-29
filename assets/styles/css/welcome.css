@@ -29,6 +29,7 @@
           stroke: none !important; }
   .welcome-box .welcome-content .entry-btn {
     cursor: pointer;
+    font-size: 18px;
     transition: bottom ease-out 0.3s;
     color: #ffffff;
     display: inline-flex;
@@ -43,14 +44,8 @@
     margin-left: -128px; }
     .welcome-box .welcome-content .entry-btn.show {
       bottom: 30px; }
-    .welcome-box .welcome-content .entry-btn:HOVER {
-      color: #000; }
-      .welcome-box .welcome-content .entry-btn:HOVER .scroll-down {
-        border-color: #000; }
-      .welcome-box .welcome-content .entry-btn:HOVER .entry-hover-icon {
-        opacity: 1 !important; }
-      .welcome-box .welcome-content .entry-btn:HOVER .entry-icon {
-        opacity: 0 !important; }
+    .welcome-box .welcome-content .entry-btn:HOVER > p {
+      color: #333366; }
     .welcome-box .welcome-content .entry-btn .entry-icon-wrap {
       width: 42px;
       height: 50px;
